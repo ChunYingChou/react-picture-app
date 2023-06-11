@@ -1,0 +1,29 @@
+div.search {
+  margin: 5rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+
+  input {
+    width: 30%;
+    padding: 0.75rem;
+    border-radius: 10px 0 0 10px;
+    border: 3px solid #5151a2;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0 10px 10px 0;
+    border: 0;
+    background-color: #5151a2;
+    color: white;
+    font-family: 'Kalam', cursive;
+
+    &:hover {
+      color: bisque;
+    }
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');

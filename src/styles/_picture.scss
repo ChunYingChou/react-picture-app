@@ -1,0 +1,84 @@
+$blue: #5151a2;
+$light-blue: #8080c0;
+
+div.pictures {
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  div.picture {
+    // outline: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+
+    div.imageContainer {
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+
+      img {
+        // outline: 3px solid green;
+        max-width: 100%;
+        border-radius: 15px;
+        margin-bottom: 1rem;
+        transform: scale(1, 1);
+        transition: all 1s ease-out;
+
+        &:hover {
+          opacity: 0.7;
+          cursor: pointer;
+          transform: scale(1.5, 1.5);
+        }
+      }
+    }
+
+    div.textArea {
+      p {
+        font-size: 1rem;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+    }
+
+    div.button {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+
+      a {
+        text-decoration: none;
+        background-color: $light-blue;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 10px;
+        font-weight: bolder;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+// 如果螢幕寬度為1000px以下，橫排為2張圖
+@media screen and (max-width: 1000px) {
+  div.pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// 如果螢幕寬度為750px以下，橫排為1張圖
+@media screen and (max-width: 750px) {
+  div.pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");

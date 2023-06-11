@@ -1,0 +1,9 @@
+$blue: #5151a2;
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: $blue;
+  padding: 0.5rem 0;
+}

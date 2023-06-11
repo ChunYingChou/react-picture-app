@@ -1,0 +1,46 @@
+$blue: #5151a2;
+
+nav {
+  width: 100%;
+  background-color: $blue;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  div.title {
+    // outline: 2px solid yellow;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 2rem;
+      color: white;
+      margin-top: 0.5rem;
+      font-family: 'Orbitron', sans-serif;
+    }
+  }
+
+  div.link {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: white;
+      padding: 0 1rem;
+      font-family: 'Kalam', cursive;
+
+      &:hover {
+        color: bisque;
+      }
+    }
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');

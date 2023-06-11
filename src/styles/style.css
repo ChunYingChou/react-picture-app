@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body div.morePicture {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+body div.morePicture button.morePicture {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: #6fb7b7;
+  color: white;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+div.search {
+  margin: 5rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+div.search input {
+  width: 30%;
+  padding: 0.75rem;
+  border-radius: 10px 0 0 10px;
+  border: 3px solid #5151a2;
+}
+div.search button {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0 10px 10px 0;
+  border: 0;
+  background-color: #5151a2;
+  color: white;
+  font-family: "Kalam", cursive;
+}
+div.search button:hover {
+  color: bisque;
+}
+
+nav {
+  width: 100%;
+  background-color: #5151a2;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav div.title {
+  display: flex;
+  align-items: center;
+}
+nav div.title h1 {
+  font-size: 2rem;
+  color: white;
+  margin-top: 0.5rem;
+  font-family: "Orbitron", sans-serif;
+}
+nav div.link {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav div.link a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  padding: 0 1rem;
+  font-family: "Kalam", cursive;
+}
+nav div.link a:hover {
+  color: bisque;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #5151a2;
+  padding: 0.5rem 0;
+}
+
+div.pictures {
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+div.pictures div.picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+div.pictures div.picture div.imageContainer {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+div.pictures div.picture div.imageContainer img {
+  max-width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  transform: scale(1, 1);
+  transition: all 1s ease-out;
+}
+div.pictures div.picture div.imageContainer img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
+div.pictures div.picture div.textArea p {
+  font-size: 1rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+div.pictures div.picture div.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+div.pictures div.picture div.button a {
+  text-decoration: none;
+  background-color: #8080c0;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: bolder;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1000px) {
+  div.pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 750px) {
+  div.pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+} /*# sourceMappingURL=style.css.map */
