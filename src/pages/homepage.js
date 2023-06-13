@@ -57,7 +57,7 @@ const Homepage = () => {
     <div style={{ minHeight: "100vh" }}>
       {/* 搜尋列 */}
       <Search
-        search={input.length === 0 ? search : searchKeyWord}
+        search={input.trim().length === 0 ? search : searchKeyWord}
         setInput={setInput}
       />
       {/* 圖片區 */}
