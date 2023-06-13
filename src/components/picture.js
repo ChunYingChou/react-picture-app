@@ -23,9 +23,6 @@ const Picture = ({ data }) => {
         <p className="desc">
           <strong>標題：</strong>
           {data.alt_description}
-          {/* {data.alt_description.length > 40
-            ? data.alt_description.slice(0, 41)
-            : data.alt_description} */}
         </p>
 
         <p>
@@ -36,18 +33,6 @@ const Picture = ({ data }) => {
 
       <div className="button">
         {/* modal視窗 */}
-        {/* <Button
-          style={{
-            backgroundColor: "#8080c0",
-            borderRadius: "10px",
-            marginRight: "1rem",
-            border: "none",
-          }}
-          onClick={handleShow}
-        >
-          詳細資訊
-        </Button> */}
-
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>詳細資訊</Modal.Title>
